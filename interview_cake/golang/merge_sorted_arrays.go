@@ -5,6 +5,19 @@ import (
 )
 
 func main() {
+	/* Merge Sorted Arrays
+
+	O(N) best possible runtime, every element should be touched.
+
+	Both input arrays are already sorted, so just take the lower
+	of the head of each one, and remove it as you go.
+
+	Go slices are references to Array data; the underlying
+	Array data structure doesn't need to change, just the reference,
+	for each slice reassignment.
+	Alternately, track an index for each list, but this way is cleaner.
+
+	*/
 	alice := []int{3, 4, 6, 10, 11, 15}
 	mine := []int{1, 5, 8, 12, 14, 19}
 	fmt.Println(alice)

@@ -10,6 +10,15 @@ type StackNode struct {
 }
 
 func main() {
+	/* Bracket Validator
+	one data structure to hold each opener, don't need to add the closers
+	since each closer should only be able to close the most recently-opened
+	item on the stack.
+
+	O(N) time, to touch each character once in the string.
+	O(N/2) -> O(N) space, to maintain stack of each opener
+
+	*/
 	str1 := "{ [ ] ( ) }"
 	str2 := "{ [ ( ] ) }"
 	str3 := "{[}]}"
