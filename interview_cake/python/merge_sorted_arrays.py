@@ -1,3 +1,11 @@
+"""
+Merge Sorted Arrays
+
+Not memory efficient. The copy of each array is needed to remove
+the front item. A faster version might be to re-assign each array internally
+in the generator to a[1:] instead of popping the first element.
+"""
+
 from copy import copy
 
 
